@@ -89,11 +89,9 @@ func (ac *AuthClient) GetAuthToken(ctx context.Context) (string, error) {
 
 	var token TokenMsg
 	if resp.Status == 200 {
-		err = json.Unmarshal(resp.Body, &token)
-		if err != nil {
-			return "", err
-		}
-		return token.AccessToken, nil
+		err := json.Unmarshal(resp.Body, &token)
+		return token.AccessToken, err
 	}
-	return "", nil
+	fmt.Println(string(resp.Body))
+	return "", fmt.Errorf(string(resp.Body))
 }
