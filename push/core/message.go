@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"hmspush/httpclient"
-	"hmspush/push/constant"
-	"hmspush/push/model"
-	"hmspush/push/verify"
+	"github.com/ixugo/hms-push/httpclient"
+	"github.com/ixugo/hms-push/push/constant"
+	"github.com/ixugo/hms-push/push/model"
+	"github.com/ixugo/hms-push/push/verify"
 )
 
 // SendMessage sends a message to huawei cloud common

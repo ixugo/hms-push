@@ -20,7 +20,7 @@ import (
 	"errors"
 	"regexp"
 
-	"hmspush/push/model"
+	"github.com/ixugo/hms-push/push/model"
 )
 
 var (

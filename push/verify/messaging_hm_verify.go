@@ -19,8 +19,8 @@ package verify
 import (
 	"errors"
 
-	"hmspush/push/constant"
-	"hmspush/push/model"
+	"github.com/ixugo/hms-push/push/constant"
+	"github.com/ixugo/hms-push/push/model"
 )
 
 func validateAndroidConfig(androidConfig *model.AndroidConfig) error {

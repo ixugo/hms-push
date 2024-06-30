@@ -21,9 +21,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"hmspush/examples/common"
-	"hmspush/push/constant"
-	"hmspush/push/model"
+	"github.com/ixugo/hms-push/examples/common"
+	"github.com/ixugo/hms-push/push/constant"
+	"github.com/ixugo/hms-push/push/model"
 )
 
 func main() {

@@ -19,7 +19,7 @@ package model
 import (
 	"time"
 
-	"hmspush/push/constant"
+	"github.com/ixugo/hms-push/push/constant"
 )
 
 type WebPushConfig struct {

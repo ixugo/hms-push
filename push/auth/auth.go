@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"hmspush/httpclient"
-	"hmspush/push/config"
+	"github.com/ixugo/hms-push/httpclient"
+	"github.com/ixugo/hms-push/push/config"
 )
 
 type AuthClient struct {

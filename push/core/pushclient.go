@@ -23,10 +23,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"hmspush/httpclient"
-	"hmspush/push/auth"
-	"hmspush/push/config"
-	"hmspush/push/constant"
+	"github.com/ixugo/hms-push/httpclient"
+	"github.com/ixugo/hms-push/push/auth"
+	"github.com/ixugo/hms-push/push/config"
+	"github.com/ixugo/hms-push/push/constant"
 )
 
 type HttpPushClient struct {

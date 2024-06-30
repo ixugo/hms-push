@@ -16,7 +16,7 @@ Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
 
 package model
 
-import "hmspush/push/constant"
+import "github.com/ixugo/hms-push/push/constant"
 
 type MessageRequest struct {
 	ValidateOnly bool     `json:"validate_only"`

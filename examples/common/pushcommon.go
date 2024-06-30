@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync"
 
-	"hmspush/push/config"
-	"hmspush/push/core"
+	"github.com/ixugo/hms-push/push/config"
+	"github.com/ixugo/hms-push/push/core"
 )
 
 const (
