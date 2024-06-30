@@ -92,6 +92,5 @@ func (ac *AuthClient) GetAuthToken(ctx context.Context) (string, error) {
 		err := json.Unmarshal(resp.Body, &token)
 		return token.AccessToken, err
 	}
-	fmt.Println(string(resp.Body))
 	return "", fmt.Errorf(string(resp.Body))
 }

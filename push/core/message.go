@@ -32,23 +32,16 @@ import (
 // One of Token, Topic and Condition fields must be invoked in message
 // If validationOnly is set to true, the message can be verified by not sent to users
 func (c *HttpPushClient) SendMessage(ctx context.Context, msgRequest *model.MessageRequest) (*model.MessageResponse, error) {
-	result := &model.MessageResponse{}
-
-	err := verify.ValidateMessage(msgRequest.Message)
-	if err != nil {
+	var result model.MessageResponse
+	if err := verify.ValidateMessage(msgRequest.Message); err != nil {
 		return nil, err
 	}
-
 	request, err := c.getSendMsgRequest(msgRequest)
 	if err != nil {
 		return nil, err
 	}
-
-	err = c.executeApiOperation(ctx, request, result)
-	if err != nil {
-		return result, err
-	}
-	return result, err
+	err = c.executeApiOperation(ctx, request, &result)
+	return &result, err
 }
 
 func (c *HttpPushClient) getSendMsgRequest(msgRequest *model.MessageRequest) (*httpclient.PushRequest, error) {
