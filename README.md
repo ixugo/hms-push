@@ -2,11 +2,17 @@
 
 2024-06-29 更新
 
+该项目 clone 自 `https://github.com/HMS-Core/hms-push-serverdemo-go`
+
+## 使用方式
+
+`go get -u github.com/ixugo/hms-push`
+
 ## 目录
 - [华为推送服务服务端Golang示例代码](#华为推送服务服务端golang示例代码)
+	- [使用方式](#使用方式)
 	- [目录](#目录)
 	- [简介](#简介)
-	- [安装](#安装)
 	- [配置](#配置)
 	- [示例代码](#示例代码)
 	- [技术支持](#技术支持)
@@ -22,10 +28,7 @@ Golang示例代码对华为推送服务（HUAWEI Push Kit）服务端接口进�
 |[httpclient](src/httpclient/httpclient.go) | 发送网络请求包|
 |[push](src/push) | 服务端接口封装包|
 
-## 安装
-使用Golang示例代码前，请确认您已安装Golang开发环境（推荐使用Golang 1.11或以上版本），并解压Golang示例代码包。
 
-将解压包中的org.huawei.com包复制到GOPATH指定的工程vendor目录下。刷新该工程，确保文件出现在对应的目录下。
 
 ## 配置
 Golang示例代码以push包中的Client结构体为入口。Client结构体中的每个方法都可以调用推送服务服务端的一个接口。
